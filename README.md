@@ -12,13 +12,13 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 <p align="center">
-  <img  src="https://github.com/neihynocnir/jungle_rails/blob/master/docs/jungle.png" width=60%>
+  <img  src="https://github.com/neihynocnir/jungle_rails/blob/master/docs/jungle.png" width=80%>
 </p>
 <p align="center">
-  <img src="https://github.com/neihynocnir/scheduler/blob/master/docs/admin.png" width=60%>
+  <img src="https://github.com/neihynocnir/jungle_rails/blob/master/docs/admin.png" width=60%>
 </p>
 <p align="center">
-  <img src="https://github.com/neihynocnir/scheduler/blob/master/docs/about.png" width=60%>
+  <img src="https://github.com/neihynocnir/jungle_rails/blob/master/docs/about.png" width=60%>
 </p>
 
 ## Setup
