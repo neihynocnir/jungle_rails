@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "User can navigates from home page to product details", type: :feature, js: true do
+RSpec.feature "User can navigates from home page to product and add one product to the cart", type: :feature, js: true do
   # SETUP
   before :each do
     @category = Category.create! name: 'Apparel'
@@ -16,15 +16,15 @@ RSpec.feature "User can navigates from home page to product details", type: :fea
     end
   end
 
-  scenario "visit the homepage and see the details" do
+  scenario "visit the homepage and add one product to the cart" do
     # ACT
     visit root_path
     # DEBUG / VERIFY
-    find('.btn-default', match: :first).click
-    save_screenshot('home_page.png')
+    expect(page).to have_content('My Cart (0)')
+    find('.btn-primary', match: :first).click
     # VERIFY
-    expect(page).to have_content('Description')
-    save_screenshot('product_details.png')
+    expect(page).to have_content('My Cart (1)')
+    save_screenshot('my_cart.png')
   end
 
 end
